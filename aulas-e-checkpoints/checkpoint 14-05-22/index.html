@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint</title>
+</head>
+<style>
+    div {
+        border: 1px solid #000;
+        width: 200px;
+        height: 200px;
+    }
+
+    .corVermelho {
+        background-color: red;
+    }
+
+    .sumirAdiv {
+        display: none;
+    }
+
+    .corVerde {
+        background-color: green;
+    }
+
+    #btnClicar {
+        width: 220px;
+        height: 60px;
+        background-color: blueviolet;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+
+
+    }
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+    }
+    input#txt{
+        font-weight:bold;
+        font-size:2em;
+    }
+</style>
+<script>
+    window.onload = () => {
+        const btnClicar = document.querySelector('#btnClicar')
+        const divTeste = document.querySelector('#divTeste')
+        const btnRemoveEaddbtnSumir = document.querySelector('#btnSumir')
+        const btnRemoveEadd = document.querySelector('#btnRemoveEadd')
+
+        btnClicar.addEventListener('click', () => {
+            divTeste.classList.add('corVermelho')
+        })
+        btnSumir.addEventListener('click', () => {
+            divTeste.classList.toggle('sumirAdiv')
+        })
+        btnRemoveEadd.addEventListener('click', () => {
+            divTeste.classList.remove('corVermelho')
+            divTeste.classList.add('corVerde')
+        })
+    }
+</script>
+
+<body>
+    <div id="divTeste"></div>
+
+    <input type="button" value="adicion" id="btnClicar">
+    <input type="button" value="sumir com a div" id="btnSumir">
+    <input type="button" value="remover e adicionar" id="btnRemoveEadd">
+
+    <input type="text" name="txt" id="txt">
+</body>
+
+</html>

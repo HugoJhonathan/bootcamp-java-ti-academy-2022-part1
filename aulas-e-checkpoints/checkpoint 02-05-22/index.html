@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 02/05/22</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        width:100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    div#janelaCliente, div#janelaProduto{
+        width: 400px;
+        height: 200px;
+        background-color: chocolate;
+        color:aliceblue;
+        font-size:22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        padding:5px;
+    }
+    div#janelaProduto{
+        background-color: blueviolet;
+        height: 500px;
+    }
+    .mostrar{
+        display: block;
+    }
+    .fechar{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color:black;
+    }
+    a:hover{
+        color:red;
+    }
+</style>
+<body>
+    <div id="janelaCliente" class="mostrar">
+        janela de cliente
+    </div>
+    <div id="janelaProduto" class="mostrar">
+        janela de produtos
+    </div>
+    <a href="alinhamento.html">Alinhamento flexbox</a>
+    
+</body>
+</html>
